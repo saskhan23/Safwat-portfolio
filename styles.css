@@ -875,3 +875,36 @@ body{
     margin-left:26px;
   }
 }
+
+/* Mobile hero overflow fix */
+@media (max-width: 700px) {
+  .hero {
+    padding-left: 6vw;
+    padding-right: 6vw;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(46px, 13.5vw, 60px);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+  }
+
+  .hero-name {
+    font-size: clamp(36px, 10vw, 44px);
+  }
+
+  .hero-desc {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
